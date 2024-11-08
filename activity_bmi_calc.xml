@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/enterthefollowing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingTop="60dp"
+        android:text="Enter the following:"
+        android:textColor="#291505"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:orientation="vertical"
+        android:paddingLeft="80dp"
+        android:paddingTop="20dp"
+        android:paddingRight="80dp">
+
+        <EditText
+            android:id="@+id/heightEditTextNumberSigned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Height"
+            android:inputType="numberSigned"
+            android:textColor="#291505"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/weightEditTextNumberSigned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Weight"
+            android:inputType="numberSigned"
+            android:paddingTop="30dp"
+            android:textColor="#291505"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingTop="50dp"
+            android:text="Result:"
+            android:textColor="#291505"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/displayTextView"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:gravity="center"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:text="0.00"
+            android:textColor="#A8A4A8"
+            android:textColorLink="#A8A4A8"
+            android:textSize="96sp" />
+
+        <TextView
+            android:id="@+id/categoryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="CATEGORY"
+            android:textColor="#291505"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="70dp"
+        android:paddingTop="50dp"
+        android:paddingRight="70dp">
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#291505 "
+            android:onClick="checkCalculate"
+            android:text="CALCULATE"
+            android:textColorLink="#00FEFEFE" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#B1784A "
+            android:text="RESET"
+            android:textColorLink="#F9F9F9" />
+    </LinearLayout>
+
+</LinearLayout>

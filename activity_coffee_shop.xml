@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#291505"
+        app:srcCompat="@drawable/tyronescoffee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="#FEFAFD"
+        android:orientation="horizontal"
+        android:paddingTop="30sp">
+
+        <TextView
+            android:id="@+id/typeTextView"
+            android:layout_width="422dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#B1784A "
+            android:paddingLeft="30sp"
+            android:text="What type of coffee?"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#000000"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:orientation="vertical"
+        android:paddingLeft="60sp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/decafRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3C3F41"
+                android:text="DECAF"
+                android:textColor="#291505" />
+
+            <RadioButton
+                android:id="@+id/espressoRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#291505"
+                android:text="ESPRESSO"
+                android:textColor="#291505"
+                android:textColorLink="#00FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/colombianRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#5C5D5E"
+                android:text="COLOMBIAN"
+                android:textColor="#291505"
+                android:textColorLink="#00FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/extrasTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B1784A "
+            android:paddingLeft="30sp"
+            android:text="Any extras for your coffee?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:orientation="vertical"
+        android:paddingLeft="60sp">
+
+        <CheckBox
+            android:id="@+id/creamerCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#291505"
+            android:text="CREAMER"
+            android:textColor="#291505" />
+
+        <CheckBox
+            android:id="@+id/sugarCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#291505"
+            android:text="SUGAR"
+            android:textColor="#291505" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30sp"
+        android:paddingTop="50sp"
+        android:paddingRight="30sp">
+
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#291505 "
+            android:gravity="center"
+            android:onClick="checkPrice"
+            android:text="PAY"
+            android:textColorLink="#291505" />
+    </LinearLayout>
+
+</LinearLayout>
